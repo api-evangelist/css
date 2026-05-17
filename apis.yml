@@ -1,6 +1,6 @@
 aid: css
 url: https://raw.githubusercontent.com/api-evangelist/css/refs/heads/main/apis.yml
-x-type: standard
+kind: standard
 name: CSS (Cascading Style Sheets)
 description: >-
   Cascading Style Sheets (CSS) is a W3C web standard for describing the
@@ -15,7 +15,6 @@ tags:
   - W3C
   - Styling
   - Browser
-type: Standard
 specificationVersion: '0.19'
 created: '2025-01-01'
 modified: '2026-04-28'
