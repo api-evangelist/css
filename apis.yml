@@ -55,7 +55,7 @@ common:
     type: Website
   - url: https://www.w3.org/TR/?tag=css
     name: CSS Specifications (W3C TR)
-    type: Specifications
+    type: Specification
   - url: https://www.w3.org/Style/CSS/current-work
     name: CSS Current Work
     type: Documentation
@@ -73,7 +73,7 @@ common:
     type: Specification
   - url: https://drafts.csswg.org/
     name: CSS Editor's Drafts
-    type: Specifications
+    type: Specification
   - url: https://developer.mozilla.org/en-US/docs/Web/CSS
     name: MDN CSS Reference
     type: Reference
