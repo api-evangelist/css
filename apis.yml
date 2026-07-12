@@ -50,6 +50,8 @@ useCases:
   - name: Accessibility
     description: Authors honor user preferences (prefers-reduced-motion, prefers-contrast) via media features.
 common:
+  - type: DomainSecurity
+    url: security/css-domain-security.yml
   - url: https://www.w3.org/Style/CSS/
     name: CSS at W3C
     type: Website
