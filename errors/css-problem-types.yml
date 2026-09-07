@@ -1,0 +1,98 @@
+generated: '2026-09-07'
+method: derived
+source: >-
+  wsdl/css-validator.wsdl (verbatim, https://www.w3.org/2005/09/css-validator.wsdl),
+  enriched from https://jigsaw.w3.org/css-validator/api.html
+api: W3C CSS Validation Service
+format: domain-specific
+rfc9457: false
+summary: >-
+  The CSS Validation Service separates two things a generic error catalog usually conflates.
+  Transport-level faults are declared in the WSDL as SOAP faults. Validation findings — the
+  errors and warnings in a stylesheet — are NOT faults at all: they are the successful result
+  payload, returned with HTTP 200 and validity false. An agent that treats a stylesheet error
+  as a call failure will retry a request that already succeeded.
+envelope:
+  success_root: cssvalidationresponse
+  validity_field: validity
+  detail: >-
+    A malformed stylesheet is a 200 with validity=false and a populated errorlist. Only a
+    malformed *request* or an engine failure produces a fault.
+faults:
+  - id: invalidDataFault
+    soap_code: soap:Sender
+    element: tns:invalidDataError
+    meaning: >-
+      The request itself was not usable — neither uri nor text supplied, or a parameter value
+      outside the documented set.
+    remediation: >-
+      Supply exactly one of uri or text, and keep profile, usermedium, output, lang and
+      warning within the values in the User Manual parameter table.
+    source: wsdl/css-validator.wsdl
+    note: >-
+      Declared in the interface and bound to soap:Sender, but the element it references,
+      tns:invalidDataError, is not defined anywhere in the WSDL's own schema — the schema
+      defines only errordetail. Recorded as published; the gap is the provider's, not ours.
+  - id: processingFault
+    soap_code: soap:Receiver
+    element: tns:errordetail
+    meaning: The validator failed while processing an otherwise well-formed request.
+    remediation: >-
+      Retry once after the one-second courtesy interval. The operation is safe
+      (wsdlx:safe="true") so a retry cannot double-apply anything.
+    source: wsdl/css-validator.wsdl
+validation_findings:
+  note: >-
+    These are result payload shapes, not error codes. The service publishes no enumerated
+    registry of stylesheet error codes; errortype and errorsubtype are free strings emitted by
+    the engine, so this catalog records the shape rather than inventing a code list.
+  error:
+    container: result.errors.errorlist
+    count_field: result.errors.errorcount
+    fields:
+      - name: line
+        required: true
+        description: Line in the validated document where the error was detected.
+      - name: errortype
+        required: true
+        description: Engine-assigned class of the error. Free string; no published enumeration.
+      - name: context
+        required: false
+        description: The rule or selector context in which the error occurred.
+      - name: message
+        required: false
+        description: Human-readable message, localized by the lang parameter.
+      - name: property
+        required: false
+        description: The CSS property the error concerns, when the error is property-scoped.
+      - name: errorsubtype
+        required: false
+        description: Engine-assigned refinement of errortype. Free string.
+      - name: skippedstring
+        required: false
+        description: The source fragment the parser discarded in order to recover.
+  warning:
+    container: result.warnings.warninglist
+    count_field: result.warnings.warningcount
+    fields:
+      - name: line
+        required: true
+      - name: level
+        required: true
+        description: >-
+          Severity 0-2. Only warnings at or below the level requested by the warning parameter
+          are returned. Advisory — warnings never make validity false.
+      - name: message
+        required: true
+      - name: context
+        required: false
+http_status_codes:
+  - status: 200
+    meaning: >-
+      Request handled. Includes stylesheets that failed validation — check the validity field,
+      not the status code.
+  - status: 500
+    meaning: >-
+      Observed 2026-09-07 on an unparseable query string (validator?wsdl). The service returns
+      an XHTML error document rather than a SOAP fault for this case.
+    probed: true

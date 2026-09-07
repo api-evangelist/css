@@ -1,0 +1,59 @@
+generated: '2026-09-07'
+method: searched
+source: https://www.w3.org/Style/CSS/all-properties.en.json
+name: CSS Vocabulary — properties and descriptors
+description: >-
+  The CSS vocabulary as published by the W3C CSS Working Group. W3C generates two
+  machine-readable JSON indexes from the CSS specifications themselves and serves them
+  from w3.org: every CSS property and every at-rule descriptor, each with the spec that
+  defines it, the anchor URL of its definition, and the W3C maturity status of that
+  definition. Both files in this directory are saved verbatim from those URLs.
+publisher: W3C CSS Working Group
+license: https://www.w3.org/copyright/document-license/
+files:
+  - file: vocabulary/css-all-properties.json
+    source: https://www.w3.org/Style/CSS/all-properties.en.json
+    http_status: 200
+    fetched: '2026-09-07'
+    bytes: 430638
+    format: json
+    shape: 'array of { property, url, status, title }'
+    rows: 2279
+    unique_terms: 731
+    note: >-
+      One row per (property, defining specification) pair, so a property defined in both an
+      Editor's Draft and a Recommendation appears more than once. 731 distinct property names.
+  - file: vocabulary/css-all-descriptors.json
+    source: https://www.w3.org/Style/CSS/all-descriptors.en.json
+    http_status: 200
+    fetched: '2026-09-07'
+    bytes: 48927
+    format: json
+    shape: 'array of { descriptor, URL, status, specification }'
+    rows: 263
+    unique_terms: 92
+    note: At-rule descriptors (@font-face, @counter-style, @page, @property and others).
+terms:
+  properties: 731
+  descriptors: 92
+  defining_specifications: 101
+maturity_distribution:
+  note: >-
+    Counted from the property rows in css-all-properties.json. These are W3C Process
+    maturity levels, not CSS "levels" — see lifecycle/css-lifecycle.yml.
+  ED: 1239
+  WD: 555
+  CRD: 163
+  REC: 161
+  FPWD: 96
+  CR: 58
+  NOTE: 7
+related:
+  - name: webref — machine-readable extracts of every CSS spec
+    url: https://github.com/w3c/webref
+    note: >-
+      W3C also publishes per-specification JSON extracts (properties, values, at-rules,
+      selectors) to npm as @webref/css. Recorded in packages/css-packages.yml.
+  - name: CSS Snapshot 2026
+    url: https://www.w3.org/TR/css-2026/
+    note: The W3C definition of which CSS specifications make up "CSS" in a given year.

@@ -1,0 +1,43 @@
+generated: '2026-09-07'
+method: probed
+source: https://jigsaw.w3.org/css-validator/
+summary: >-
+  The CSS Validation Service is itself a public console: three forms — by URL, by file upload,
+  and by direct input — let anyone run a real validation with no account and no key. There is
+  no separate sandbox because there is no live/test distinction to draw: the service is
+  read-only and free, so the console and production are the same surface.
+console:
+  url: https://jigsaw.w3.org/css-validator/
+  http_status: 200
+  auth_required: false
+  modes:
+    - name: Validate by URL
+      description: Enter the URL of an HTML or CSS document. @import rules are followed.
+    - name: Validate by file upload
+      description: >-
+        Upload a local file. CSS only — HTML uploads are rejected — and @import is followed
+        only when it references a public URL, so relative paths will not resolve.
+    - name: Validate by direct input
+      description: >-
+        Paste a CSS fragment into a textarea. W3C recommends this mode for test cases and bug
+        reports because the resulting URL is linkable.
+  source: https://jigsaw.w3.org/css-validator/manual.html
+test_mode:
+  separate_test_environment: false
+  test_credentials: []
+  test_fixtures: []
+  detail: >-
+    No test keys, no test-vs-live prefixes, no fixtures and no time simulation, because none
+    of those concepts apply — the service holds no state and issues no credentials.
+live_probe:
+  url: https://jigsaw.w3.org/css-validator/validator?text=a%7Bcolor%3Ared%7D&output=json&profile=css3
+  http_status: 200
+  fetched: '2026-09-07'
+  result: 'validity true, errorcount 0, warningcount 0'
+  note: >-
+    A real anonymous call made during this pass. Recorded as the evidence that the console
+    and the programmatic interface are the same unauthenticated surface.
+local_alternative:
+  detail: >-
+    For anything beyond occasional interactive use, W3C directs callers to the jar rather than
+    the hosted console. See cli/css-cli.yml.

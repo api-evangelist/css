@@ -1,0 +1,117 @@
+generated: '2026-09-07'
+method: searched
+source: >-
+  wsdl/css-validator.wsdl, https://jigsaw.w3.org/css-validator/api.html,
+  https://www.w3.org/policies/patent-policy/ and https://www.w3.org/policies/process/
+summary: >-
+  Two kinds of conformance are recorded here and they should not be confused. The first is
+  what the CSS Validation Service's own contract conforms to — SOAP 1.2, WSDL 2.0, XML Schema
+  and, in its result vocabulary, EARL. The second is the governance regime CSS itself is
+  published under: the W3C Process and the W3C Royalty-Free Patent Policy. Every entry cites
+  the exact document location the claim is read from.
+conformance:
+  - id: soap12
+    name: SOAP 1.2
+    conforms: true
+    evidence: >-
+      wsdl/css-validator.wsdl declares wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP"
+      and the response envelope namespace http://www.w3.org/2003/05/soap-envelope; the service
+      switches to this interface on output=soap12.
+    url: https://www.w3.org/2005/09/css-validator.wsdl
+  - id: wsdl20
+    name: WSDL 2.0
+    conforms: true
+    evidence: >-
+      The description element is in the WSDL 2.0 namespace http://www.w3.org/ns/wsdl and uses
+      WSDL 2.0 constructs (interface, message exchange pattern in-out, wsdlx:safe, endpoint).
+      api.html calls it "A WSDL 2 description file".
+    url: https://www.w3.org/2005/09/css-validator.wsdl
+  - id: xml-schema
+    name: XML Schema 1.0
+    conforms: true
+    evidence: The WSDL types section embeds an xs:schema defining every request and response type.
+    url: https://www.w3.org/2005/09/css-validator.wsdl
+  - id: safe-idempotent-http
+    name: HTTP safe method semantics
+    conforms: true
+    evidence: >-
+      Both WSDL operations carry wsdlx:safe="true" and the documented programmatic interface is
+      an HTTP GET, so the contract itself asserts the operations have no side effects.
+    url: https://jigsaw.w3.org/css-validator/api.html
+  - id: rfc9457
+    name: RFC 9457 Problem Details
+    conforms: false
+    evidence: >-
+      Faults are SOAP faults and validation findings are 200 result payloads. No
+      application/problem+json anywhere. See errors/css-problem-types.yml.
+  - id: oauth2
+    name: OAuth 2.0
+    conforms: false
+    evidence: >-
+      No authorization surface exists. /.well-known/oauth-authorization-server returned 404 on
+      all three hosts (well-known/css-well-known.yml).
+  - id: oidc
+    name: OpenID Connect
+    conforms: false
+    evidence: /.well-known/openid-configuration returned 404 on all three hosts.
+  - id: pagination
+    name: Result pagination
+    conforms: false
+    evidence: A validation response returns the complete error and warning lists; no paging exists.
+  - id: idempotency-key
+    name: Idempotency-Key replay protection
+    conforms: false
+    evidence: >-
+      Not applicable rather than missing — the service is read-only, so there is nothing to
+      replay-protect. conventions/css-conventions.yml records coverage na.
+domain_standards:
+  - id: earl
+    name: EARL — Evaluation and Report Language
+    conforms: true
+    partial: true
+    market: automated conformance evaluation and accessibility reporting
+    evidence: >-
+      The API documentation defines the response vocabulary in EARL terms explicitly: "uri —
+      the address of the document validated. In EARL terms, this is the TestSubject" and
+      "checkedby — Location of the service which provided the validation result. In EARL
+      terms, this is the Assertor." The response therefore carries an EARL assertion structure
+      (TestSubject, Assertor, outcome via validity) inside the SOAP payload.
+    location: https://jigsaw.w3.org/css-validator/api.html#soap12response
+    caveat: >-
+      The service maps its fields onto EARL roles but does not serialize EARL RDF, and no
+      output=earl format is offered. Recorded as a partial, documented alignment — not as an
+      EARL-conformant report generator.
+  - id: w3c-patent-policy-rf
+    name: W3C Royalty-Free Patent Policy
+    conforms: true
+    market: web standards
+    evidence: >-
+      CSS is developed by a W3C Working Group and every CSS Recommendation is published under
+      the W3C Patent Policy, which commits participants to royalty-free licensing of essential
+      claims. This is what makes CSS free to implement, and it is the substance behind the
+      empty pricing model in plans/css-plans-pricing.yml.
+    location: https://www.w3.org/policies/patent-policy/
+  - id: w3c-process
+    name: W3C Process Document
+    conforms: true
+    market: web standards
+    evidence: >-
+      CSS modules advance through the W3C Process maturity ladder and can only be superseded,
+      obsoleted or rescinded through the procedures it defines. See lifecycle/css-lifecycle.yml.
+    location: https://www.w3.org/policies/process/
+test_suites:
+  - name: CSS Working Group test suite (Web Platform Tests)
+    url: https://github.com/web-platform-tests/wpt/tree/master/css
+    status: 200
+    note: >-
+      The CSSWG's conformance tests were folded into web-platform-tests. test.csswg.org now
+      serves the CSS Working Group wiki rather than a standalone suite.
+  - name: Implementation results dashboard
+    url: https://wpt.fyi/results/css
+    status: 200
+certifications:
+  published: []
+  note: >-
+    No SOC 2, ISO 27001, PCI, HIPAA or FedRAMP program is published for w3.org or for the
+    validation service. probe-security-programs.py found no trust center and no vulnerability
+    disclosure program on 2026-09-07. No Compliance pointer is emitted.

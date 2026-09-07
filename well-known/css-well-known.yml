@@ -1,0 +1,72 @@
+generated: '2026-09-07'
+method: probed
+source: live HTTP probes of every host this record names
+note: >-
+  Every named .well-known path was probed on all three hosts this record knows: the W3C
+  primary site, the CSS Working Group Editor's Drafts host (GitHub Pages), and jigsaw.w3.org,
+  which serves the CSS Validation Service. Nothing was served. Every 404 body was read: w3.org
+  returns its own styled "Page Not Found" page, drafts.csswg.org returns the GitHub Pages 404,
+  and jigsaw.w3.org returns a bare "Invalid URL" document. No WellKnown or SecurityTxt pointer
+  is emitted from this file — it records an absence, not a surface.
+hosts:
+  - host: www.w3.org
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: drafts.csswg.org
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+  - host: jigsaw.w3.org
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+llms_txt:
+  - url: https://www.w3.org/llms.txt
+    status: 404
+  - url: https://drafts.csswg.org/llms.txt
+    status: 404
+  - url: https://jigsaw.w3.org/llms.txt
+    status: 404

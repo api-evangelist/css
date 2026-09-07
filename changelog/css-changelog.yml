@@ -1,0 +1,64 @@
+generated: '2026-09-07'
+method: searched
+source: >-
+  https://www.w3.org/TR/css-2026/, https://www.w3.org/Style/CSS/current-work and
+  https://github.com/w3c/css-validator/releases
+summary: >-
+  CSS publishes no single dated changelog, because CSS is not one document. The nearest
+  first-party equivalents are recorded here: the annual CSS Snapshot, which is the dated
+  statement of what "CSS" contains in a given year, and the dated release tags of the CSS
+  Validation Service. Individual modules carry their own "Changes" section in each TR
+  publication.
+scheme: annual-snapshot
+current_version: CSS Snapshot 2026
+current_version_date: '2026-06-22'
+entries:
+  - version: CSS Snapshot 2026
+    date: '2026-06-22'
+    url: https://www.w3.org/TR/css-2026/
+    kind: specification-snapshot
+    breaking: false
+    highlights:
+      - The current W3C definition of the CSS specifications that together make up CSS.
+  - version: CSS Snapshot 2025
+    date: '2025-09-18'
+    url: https://www.w3.org/TR/css-2025/
+    kind: specification-snapshot
+    breaking: false
+  - version: CSS Snapshot 2024
+    date: '2025-02-25'
+    url: https://www.w3.org/TR/css-2024/
+    kind: specification-snapshot
+    breaking: false
+  - version: CSS Snapshot 2023
+    date: '2023-12-07'
+    url: https://www.w3.org/TR/css-2023/
+    kind: specification-snapshot
+    breaking: false
+  - version: cssval-20250226
+    date: '2025-02-26'
+    url: https://github.com/w3c/css-validator/releases/tag/cssval-20250226
+    kind: service-release
+    component: W3C CSS Validation Service
+    breaking: false
+  - version: cssval-20231124
+    date: '2023-11-24'
+    url: https://github.com/w3c/css-validator/releases/tag/cssval-20231124
+    kind: service-release
+    component: W3C CSS Validation Service
+    breaking: false
+  - version: cssval-20220105
+    date: '2022-01-05'
+    url: https://github.com/w3c/css-validator/releases/tag/cssval-20220105
+    kind: service-release
+    component: W3C CSS Validation Service
+    breaking: false
+per_module_changes:
+  note: >-
+    Every CSS module publication carries a "Changes" section listing what moved since the
+    previous draft, and drafts.csswg.org rebuilds continuously from w3c/csswg-drafts. Those
+    are the authoritative per-feature change records; there are 101 defining specifications
+    and they are not aggregated here.
+  index: https://www.w3.org/Style/CSS/current-work
+  drafts: https://drafts.csswg.org/
+  commits: https://github.com/w3c/csswg-drafts/commits/main

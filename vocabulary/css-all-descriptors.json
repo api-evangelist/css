@@ -1,0 +1,1316 @@
+[ { "descriptor": "additive-symbols"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-additive-symbols"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "additive-symbols"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-additive-symbols"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "any-hover"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-any-hover"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "any-hover"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-any-hover"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "any-hover"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-any-hover"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "any-hover"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-any-hover"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "any-pointer"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-any-pointer"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "any-pointer"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-any-pointer"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "any-pointer"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-any-pointer"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "any-pointer"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-any-pointer"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "ascent-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-ascent-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "ascent-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-ascent-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "ascent-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-ascent-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "ascent-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-ascent-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-aspect-ratio"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-aspect-ratio"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-aspect-ratio"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://www.w3.org/TR/css-contain-3/#descdef-container-aspect-ratio"
+  , "status": "WD"
+  , "specification": "CSS Containment Module Level 3"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-aspect-ratio"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "aspect-ratio"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-aspect-ratio"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "base-palette"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-base-palette"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "base-palette"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-base-palette"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "bleed"
+  , "URL": "https://drafts.csswg.org/css-page-3/#descdef-page-bleed"
+  , "status": "ED"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "bleed"
+  , "URL": "https://www.w3.org/TR/css3-page#descdef-page-bleed"
+  , "status": "WD"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "block-size"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-block-size"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "block-size"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-block-size"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "block-size"
+  , "URL": "https://www.w3.org/TR/css-contain-3/#descdef-container-block-size"
+  , "status": "WD"
+  , "specification": "CSS Containment Module Level 3"
+  }
+, { "descriptor": "color"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-color"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "color"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "color"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-color"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "color"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-color"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "color-gamut"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-gamut"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "color-gamut"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color-gamut"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "color-gamut"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-color-gamut"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "color-gamut"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-color-gamut"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "color-index"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "color-index"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color-index"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "color-index"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-color-index"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "color-index"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-color-index"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "components"
+  , "URL": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-components"
+  , "status": "ED"
+  , "specification": "CSS Color Module Level 5"
+  }
+, { "descriptor": "components"
+  , "URL": "https://www.w3.org/TR/css-color-5/#descdef-color-profile-components"
+  , "status": "WD"
+  , "specification": "CSS Color Module Level 5"
+  }
+, { "descriptor": "descent-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-descent-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "descent-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-descent-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "descent-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-descent-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "descent-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-descent-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "device-aspect-ratio"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "device-aspect-ratio"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-aspect-ratio"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "device-aspect-ratio"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-device-aspect-ratio"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "device-aspect-ratio"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-device-aspect-ratio"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "device-height"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "device-height"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-height"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "device-height"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-device-height"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "device-height"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-device-height"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "device-width"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "device-width"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-width"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "device-width"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-device-width"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "device-width"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-device-width"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "display-mode"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-display-mode"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "display-mode"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-display-mode"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "dynamic-range"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-dynamic-range"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "dynamic-range"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-dynamic-range"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "environment-blending"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-environment-blending"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "environment-blending"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-environment-blending"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "fallback"
+  , "URL": "https://drafts.csswg.org/css-anchor-position-2/#descdef-container-fallback"
+  , "status": "ED"
+  , "specification": "CSS Anchor Positioning Module Level 2"
+  }
+, { "descriptor": "fallback"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-fallback"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "fallback"
+  , "URL": "https://www.w3.org/TR/css-anchor-position-2#descdef-container-fallback"
+  , "status": "FPWD"
+  , "specification": "CSS Anchor Positioning Module Level 2"
+  }
+, { "descriptor": "fallback"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-fallback"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "font-display"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-display"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-display"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-feature-values-font-display"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-display"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-display"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-display"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-feature-values-font-display"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-family"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-font-family"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-family"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-family"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-family"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-font-family"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-family"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-font-family"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-family"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-family"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-family"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-font-family"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-feature-settings"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-font-feature-settings"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-feature-settings"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-feature-settings"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-feature-settings"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-font-feature-settings"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-feature-settings"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-feature-settings"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-language-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-language-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-language-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-language-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-named-instance"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-named-instance"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-named-instance"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-named-instance"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-size"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "font-size"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-font-size"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "font-stretch"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-font-stretch"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-stretch"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-font-stretch"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-style"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-font-style"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-style"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-style"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-style"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-font-style"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-style"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-style"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-variation-settings"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-variation-settings"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-variation-settings"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-variation-settings"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-weight"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-font-weight"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-weight"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-weight"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-weight"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-font-weight"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "font-weight"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-weight"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-width"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-width"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "font-width"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-width"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "forced-colors"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "forced-colors"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-forced-colors"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "grid"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "grid"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-grid"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "grid"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-grid"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "grid"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-grid"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "height"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-height"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "height"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-height"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "height"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-height"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "height"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-height"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "height"
+  , "URL": "https://www.w3.org/TR/css-contain-3/#descdef-container-height"
+  , "status": "WD"
+  , "specification": "CSS Containment Module Level 3"
+  }
+, { "descriptor": "height"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-height"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "height"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-height"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "horizontal-viewport-segments"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-horizontal-viewport-segments"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "horizontal-viewport-segments"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-horizontal-viewport-segments"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "hover"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-hover"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "hover"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-hover"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "hover"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-hover"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "hover"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-hover"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "inherits"
+  , "URL": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-inherits"
+  , "status": "ED"
+  , "specification": "CSS Properties and Values API Level 1"
+  }
+, { "descriptor": "inherits"
+  , "URL": "https://www.w3.org/TR/css-properties-values-api-1/#descdef-property-inherits"
+  , "status": "WD"
+  , "specification": "CSS Properties and Values API Level 1"
+  }
+, { "descriptor": "initial-value"
+  , "URL": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-initial-value"
+  , "status": "ED"
+  , "specification": "CSS Properties and Values API Level 1"
+  }
+, { "descriptor": "initial-value"
+  , "URL": "https://www.w3.org/TR/css-properties-values-api-1/#descdef-property-initial-value"
+  , "status": "WD"
+  , "specification": "CSS Properties and Values API Level 1"
+  }
+, { "descriptor": "inline-size"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-inline-size"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "inline-size"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-inline-size"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "inline-size"
+  , "URL": "https://www.w3.org/TR/css-contain-3/#descdef-container-inline-size"
+  , "status": "WD"
+  , "specification": "CSS Containment Module Level 3"
+  }
+, { "descriptor": "inverted-colors"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-inverted-colors"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "inverted-colors"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-inverted-colors"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "line-gap-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-line-gap-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "line-gap-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-line-gap-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "line-gap-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-line-gap-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "line-gap-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-line-gap-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "marks"
+  , "URL": "https://drafts.csswg.org/css-page-3/#descdef-page-marks"
+  , "status": "ED"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "marks"
+  , "URL": "https://www.w3.org/TR/css3-page#descdef-page-marks"
+  , "status": "WD"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "monochrome"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "monochrome"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-monochrome"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "monochrome"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-monochrome"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "monochrome"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-monochrome"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "nav-controls"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-nav-controls"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "nav-controls"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-nav-controls"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "navigation"
+  , "URL": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-navigation"
+  , "status": "ED"
+  , "specification": "CSS View Transitions Module Level 2"
+  }
+, { "descriptor": "navigation"
+  , "URL": "https://www.w3.org/TR/css-view-transitions-2/#descdef-view-transition-navigation"
+  , "status": "WD"
+  , "specification": "CSS View Transitions Module Level 2"
+  }
+, { "descriptor": "negative"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-negative"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "negative"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-negative"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-orientation"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-orientation"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-orientation"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://www.w3.org/TR/css-contain-3/#descdef-container-orientation"
+  , "status": "WD"
+  , "specification": "CSS Containment Module Level 3"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-orientation"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "orientation"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-orientation"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "overflow-block"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-overflow-block"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "overflow-block"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-overflow-block"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "overflow-block"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-overflow-block"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "overflow-block"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-overflow-block"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "overflow-inline"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-overflow-inline"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "overflow-inline"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-overflow-inline"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "overflow-inline"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-overflow-inline"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "overflow-inline"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-overflow-inline"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "override-colors"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-override-colors"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "override-colors"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-override-colors"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "pad"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-pad"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "pad"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-pad"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "page-margin-safety"
+  , "URL": "https://drafts.csswg.org/css-page-3/#descdef-page-page-margin-safety"
+  , "status": "ED"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "page-orientation"
+  , "URL": "https://drafts.csswg.org/css-page-3/#descdef-page-page-orientation"
+  , "status": "ED"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "page-orientation"
+  , "URL": "https://www.w3.org/TR/css3-page#descdef-page-page-orientation"
+  , "status": "WD"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "pointer"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-pointer"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "pointer"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-pointer"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "pointer"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-pointer"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "pointer"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-pointer"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-color-scheme"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-color-scheme"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-prefers-color-scheme"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-contrast"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-contrast"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-contrast"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-prefers-contrast"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-reduced-data"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-data"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-reduced-data"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-prefers-reduced-data"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-reduced-motion"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-motion"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-reduced-motion"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-prefers-reduced-motion"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-reduced-transparency"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-transparency"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefers-reduced-transparency"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-prefers-reduced-transparency"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "prefix"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-prefix"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "prefix"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-prefix"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "range"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-range"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "range"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-range"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "rendering-intent"
+  , "URL": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-rendering-intent"
+  , "status": "ED"
+  , "specification": "CSS Color Module Level 5"
+  }
+, { "descriptor": "rendering-intent"
+  , "URL": "https://www.w3.org/TR/css-color-5/#descdef-color-profile-rendering-intent"
+  , "status": "WD"
+  , "specification": "CSS Color Module Level 5"
+  }
+, { "descriptor": "resolution"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "resolution"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-resolution"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "resolution"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-resolution"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "resolution"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-resolution"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "result"
+  , "URL": "https://drafts.csswg.org/css-mixins/#descdef-function-result"
+  , "status": "ED"
+  , "specification": "CSS Custom Functions and Mixins Module Level 1"
+  }
+, { "descriptor": "result"
+  , "URL": "https://www.w3.org/TR/css-mixins-1/#descdef-function-result"
+  , "status": "FPWD"
+  , "specification": "CSS Functions and Mixins Module"
+  }
+, { "descriptor": "scan"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "scan"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scan"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "scan"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-scan"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "scan"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-scan"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "scripting"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scripting"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "scripting"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-scripting"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "scrollable"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrollable"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "scrollable"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-scrollable"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "scrolled"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrolled"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "scrolled"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-scrolled"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "shape"
+  , "URL": "https://drafts.csswg.org/css-round-display-1/#descdef-media-shape"
+  , "status": "ED"
+  , "specification": "CSS Round Display Module Level 1"
+  }
+, { "descriptor": "shape"
+  , "URL": "https://www.w3.org/TR/css-round-display-1/#descdef-media-shape"
+  , "status": "WD"
+  , "specification": "CSS Round Display Level 1"
+  }
+, { "descriptor": "size"
+  , "URL": "https://drafts.csswg.org/css-page-3/#descdef-page-size"
+  , "status": "ED"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "size"
+  , "URL": "https://www.w3.org/TR/css3-page#descdef-page-size"
+  , "status": "WD"
+  , "specification": "CSS Paged Media Module Level 3"
+  }
+, { "descriptor": "size-adjust"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-size-adjust"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "size-adjust"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-size-adjust"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "snapped"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-snapped"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "snapped"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-snapped"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "speak-as"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-speak-as"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "speak-as"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-speak-as"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "src"
+  , "URL": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-src"
+  , "status": "ED"
+  , "specification": "CSS Color Module Level 5"
+  }
+, { "descriptor": "src"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-src"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "src"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "src"
+  , "URL": "https://www.w3.org/TR/css-color-5/#descdef-color-profile-src"
+  , "status": "WD"
+  , "specification": "CSS Color Module Level 5"
+  }
+, { "descriptor": "src"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-src"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "src"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-src"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "stuck"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-stuck"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "stuck"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-stuck"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "subscript-position-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-subscript-position-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "subscript-position-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-subscript-position-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "subscript-size-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-subscript-size-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "subscript-size-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-subscript-size-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "suffix"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-suffix"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "suffix"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-suffix"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "superscript-position-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-superscript-position-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "superscript-position-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-superscript-position-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "superscript-size-override"
+  , "URL": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-superscript-size-override"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "superscript-size-override"
+  , "URL": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-superscript-size-override"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 5"
+  }
+, { "descriptor": "symbols"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-symbols"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "symbols"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-symbols"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "syntax"
+  , "URL": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-syntax"
+  , "status": "ED"
+  , "specification": "CSS Properties and Values API Level 1"
+  }
+, { "descriptor": "syntax"
+  , "URL": "https://www.w3.org/TR/css-properties-values-api-1/#descdef-property-syntax"
+  , "status": "WD"
+  , "specification": "CSS Properties and Values API Level 1"
+  }
+, { "descriptor": "system"
+  , "URL": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-system"
+  , "status": "ED"
+  , "specification": "CSS Counter Styles Module Level 3"
+  }
+, { "descriptor": "system"
+  , "URL": "https://www.w3.org/TR/css-counter-styles-3/#descdef-counter-style-system"
+  , "status": "CR"
+  , "specification": "CSS Counter Styles Level 3"
+  }
+, { "descriptor": "types"
+  , "URL": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-types"
+  , "status": "ED"
+  , "specification": "CSS View Transitions Module Level 2"
+  }
+, { "descriptor": "types"
+  , "URL": "https://www.w3.org/TR/css-view-transitions-2/#descdef-view-transition-types"
+  , "status": "WD"
+  , "specification": "CSS View Transitions Module Level 2"
+  }
+, { "descriptor": "ua-color-scheme"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-ua-color-scheme"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "unicode-range"
+  , "URL": "https://drafts.csswg.org/css-fonts-3/#descdef-unicode-range"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "unicode-range"
+  , "URL": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range"
+  , "status": "ED"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "unicode-range"
+  , "URL": "https://www.w3.org/TR/css-fonts-3/#descdef-unicode-range"
+  , "status": "REC"
+  , "specification": "CSS Fonts Module Level 3"
+  }
+, { "descriptor": "unicode-range"
+  , "URL": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-unicode-range"
+  , "status": "WD"
+  , "specification": "CSS Fonts Module Level 4"
+  }
+, { "descriptor": "update"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-update"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "update"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-update"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "update"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-update"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "update"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-update"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "vertical-viewport-segments"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-vertical-viewport-segments"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "vertical-viewport-segments"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-vertical-viewport-segments"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "video-color-gamut"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-video-color-gamut"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "video-color-gamut"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-video-color-gamut"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "video-dynamic-range"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-video-dynamic-range"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "video-dynamic-range"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-video-dynamic-range"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "viewport-fit"
+  , "URL": "https://www.w3.org/TR/css-round-display-1/#descdef-viewport-viewport-fit"
+  , "status": "WD"
+  , "specification": "CSS Round Display Level 1"
+  }
+, { "descriptor": "width"
+  , "URL": "https://drafts.csswg.org/css-conditional-5/#descdef-container-width"
+  , "status": "ED"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "width"
+  , "URL": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-width"
+  , "status": "ED"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "width"
+  , "URL": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-width"
+  , "status": "ED"
+  , "specification": "Media Queries Level 5"
+  }
+, { "descriptor": "width"
+  , "URL": "https://www.w3.org/TR/css-conditional-5#descdef-container-width"
+  , "status": "WD"
+  , "specification": "CSS Conditional Rules Module Level 5"
+  }
+, { "descriptor": "width"
+  , "URL": "https://www.w3.org/TR/css-contain-3/#descdef-container-width"
+  , "status": "WD"
+  , "specification": "CSS Containment Module Level 3"
+  }
+, { "descriptor": "width"
+  , "URL": "https://www.w3.org/TR/mediaqueries-4/#descdef-media-width"
+  , "status": "CR"
+  , "specification": "Media Queries Level 4"
+  }
+, { "descriptor": "width"
+  , "URL": "https://www.w3.org/TR/mediaqueries-5#descdef-media-width"
+  , "status": "WD"
+  , "specification": "Media Queries Level 5"
+  }
+]

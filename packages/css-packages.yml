@@ -1,0 +1,111 @@
+generated: '2026-09-07'
+method: searched
+source: >-
+  registry.npmjs.org metadata endpoints, https://jigsaw.w3.org/css-validator/DOWNLOAD.html
+  and the GitHub releases API for w3c/css-validator
+note: >-
+  CSS is a specification, not a product, so there is no client SDK for "the CSS API" and
+  none is claimed here. What the W3C does publish are (a) machine-readable extracts of the
+  CSS specifications, shipped to npm from the w3c/webref and w3c/browser-specs repositories,
+  and (b) the CSS Validator itself, distributed as a runnable jar. Only packages published
+  from a repository in the w3c GitHub organization are marked official.
+packages:
+  - name: '@webref/css'
+    registry: npm
+    url: https://www.npmjs.com/package/@webref/css
+    repository: https://github.com/w3c/webref
+    language: javascript
+    official: true
+    kind: data
+    version: 8.7.4
+    published: '2026-09-04'
+    license: MIT
+    description: >-
+      CSS definitions of the web platform — per-specification JSON extracts of every
+      property, at-rule, descriptor, selector and value definition, generated from the CSS
+      specifications by the W3C webref tooling.
+  - name: '@webref/idl'
+    registry: npm
+    url: https://www.npmjs.com/package/@webref/idl
+    repository: https://github.com/w3c/webref
+    language: javascript
+    official: true
+    kind: data
+    version: 3.83.1
+    published: '2026-09-04'
+    license: MIT
+    description: >-
+      Web IDL definitions of the web platform, including the CSSOM and CSS Houdini
+      interfaces (CSSStyleDeclaration, CSSStyleSheet, CSS Typed OM, Paint/Layout Worklet).
+  - name: '@webref/elements'
+    registry: npm
+    url: https://www.npmjs.com/package/@webref/elements
+    repository: https://github.com/w3c/webref
+    language: javascript
+    official: true
+    kind: data
+    version: 2.8.0
+    published: '2026-08-26'
+    license: MIT
+    description: Markup elements of the web platform and their associated Web IDL interfaces.
+  - name: web-specs
+    registry: npm
+    url: https://www.npmjs.com/package/web-specs
+    repository: https://github.com/w3c/browser-specs
+    language: javascript
+    official: true
+    kind: data
+    version: 4.11.0
+    published: '2026-09-02'
+    license: CC0-1.0
+    description: >-
+      Curated list of technical web specifications, including every CSS module, with its
+      series, level, maturity and canonical URLs.
+  - name: browser-specs
+    registry: npm
+    url: https://www.npmjs.com/package/browser-specs
+    repository: https://github.com/w3c/browser-specs
+    language: javascript
+    official: true
+    kind: data
+    version: 5.3.0
+    published: '2026-06-19'
+    license: CC0-1.0
+    description: >-
+      The browser-implemented subset of web-specs. Last published 2026-06-19, older than
+      web-specs; w3c/browser-specs treats web-specs as the primary distribution.
+  - name: css-validator.jar
+    registry: cdn
+    url: https://github.com/w3c/css-validator/releases/latest/download/css-validator.jar
+    repository: https://github.com/w3c/css-validator
+    language: java
+    official: true
+    kind: application
+    version: cssval-20250226
+    published: '2025-02-26'
+    description: >-
+      The W3C CSS Validation Service as a runnable jar — the same code behind
+      jigsaw.w3.org/css-validator, usable as a command line tool
+      (java -jar css-validator.jar <url>) or deployed as a war.
+    note: >-
+      Distributed as a GitHub release asset, not through a package registry, so there is no
+      registry metadata endpoint. Version and date read from the w3c/css-validator releases
+      API. The DOWNLOAD page links the floating "releases/latest" URL, so a consumer
+      following that link cannot tell which build they received.
+not_published:
+  - registry: maven-central
+    note: >-
+      No org.w3c css-validator coordinate found; the jar is a GitHub release asset only.
+  - registry: pypi
+    note: No first-party W3C CSS package found.
+  - registry: rubygems
+    note: No first-party W3C CSS package found.
+excluded:
+  - name: mdn-data
+    reason: >-
+      Machine-readable CSS data, but published by Mozilla (mdn/data), not by the W3C CSS
+      Working Group. Not first-party to this record.
+  - name: css-tree / postcss / stylelint / @csstools/*
+    reason: >-
+      Third-party CSS parsers and tooling. Real and widely used, but not published by the
+      W3C, so they are not this provider's packages.

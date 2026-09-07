@@ -1,0 +1,39 @@
+generated: '2026-09-07'
+method: searched
+source: https://jigsaw.w3.org/css-validator/manual.html#requestformat
+docs: https://jigsaw.w3.org/css-validator/api.html
+api: W3C CSS Validation Service
+summary: >-
+  The W3C CSS Validation Service is an open, anonymous, unauthenticated web service. It
+  issues no credentials, has no sign-up, no API key, no OAuth and no token of any kind. The
+  User Manual states plainly that it is "a free, public service for all" and asks callers to
+  self-throttle instead of authenticating. An agent needs no secret to call it; what it needs
+  is the courtesy rate limit recorded in rate-limits/css-rate-limits.yml.
+model: anonymous
+schemes: []
+credentials_required: false
+sign_up_required: false
+transport:
+  https: true
+  http_methods: [GET, POST]
+  note: >-
+    POST is used for the file-upload form; the programmatic interface documented in the User
+    Manual is a plain HTTP GET against the base URI with query parameters.
+identity_signals:
+  - signal: none
+    note: >-
+      No account, tenant or caller identity exists. Requests are distinguished only by the
+      document being validated, which is echoed back as the uri/TestSubject field.
+self_hosting:
+  note: >-
+    The same servlet can be run privately (java -jar css-validator.jar, or deployed as a war
+    under Tomcat or Jigsaw), in which case the operator supplies whatever authentication their
+    container enforces. See cli/css-cli.yml.
+  source: https://jigsaw.w3.org/css-validator/DOWNLOAD.html
+verification:
+  probed: '2026-09-07'
+  url: https://jigsaw.w3.org/css-validator/validator?text=a%7Bcolor%3Ared%7D&output=json&profile=css3
+  http_status: 200
+  note: >-
+    Called with no credentials of any kind and returned a complete validation result, which
+    confirms the anonymous model rather than inferring it from prose.

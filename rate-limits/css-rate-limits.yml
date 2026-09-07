@@ -1,0 +1,38 @@
+generated: '2026-09-07'
+method: searched
+source: https://jigsaw.w3.org/css-validator/manual.html#requestformat
+api: W3C CSS Validation Service
+limit_count: 1
+summary: >-
+  W3C publishes exactly one limit for the public CSS Validation Service, and it is a stated
+  courtesy obligation on the caller rather than an enforced quota: a script validating a batch
+  of documents must sleep at least one second between requests. No quota, no burst allowance
+  and no per-key ceiling is published, because there are no keys.
+limits:
+  - scope: per-caller
+    window: 1s
+    limit: 1
+    burst: null
+    unit: requests
+    enforcement: documented-courtesy
+    applies_to: all endpoints of https://jigsaw.w3.org/css-validator/validator
+    quote: >-
+      "If you wish to call the validator programmatically for a batch of documents, please
+      make sure that your script will sleep for at least 1 second between requests. The CSS
+      Validation service is a free, public service for all, your respect is appreciated."
+    source: https://jigsaw.w3.org/css-validator/manual.html#requestformat
+response_headers:
+  observed: []
+  note: >-
+    Probed 2026-09-07 against the live service: the response carried no X-RateLimit-*,
+    RateLimit-* or Retry-After header. There is no runtime rate-limit signal an agent can
+    read — the one-second interval must be honored by the client from the documentation.
+exhaustion:
+  status_code: null
+  note: >-
+    W3C does not publish what the service returns when the courtesy interval is ignored, and
+    no attempt was made to provoke it. Recording an unknown rather than guessing a 429.
+remedy: >-
+  Callers with volume needs are directed to run their own instance instead of raising a limit
+  on the public one — the validator is distributed as a jar and a war for exactly that reason
+  (https://jigsaw.w3.org/css-validator/DOWNLOAD.html).

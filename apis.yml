@@ -1,4 +1,5 @@
 aid: css
+x-type: concept
 deliveryModel:
   model: unknown
   open_source: unknown
@@ -38,10 +39,69 @@ tags:
   - W3C
   - Styling
   - Browser
+  - Specifications
+  - Validation
+  - CSSOM
+  - Houdini
+  - Front End
 specificationVersion: '0.23'
 created: '2025-01-01'
-modified: '2026-04-28'
-apis: []
+modified: '2026-09-07'
+apis:
+  - name: W3C CSS Validation Service
+    description: >-
+      The W3C's public CSS validator, exposed as a web service. A single safe operation checks
+      a stylesheet — supplied either as a URL or as inline text — against a chosen CSS profile
+      and returns the errors and warnings found, in XHTML, plain text, SOAP 1.2 or JSON. It is
+      anonymous and free, and W3C publishes a WSDL 2.0 description of the SOAP interface. This
+      is the only callable HTTP surface associated with CSS; CSS itself is a specification, not
+      a hosted service.
+    humanURL: https://jigsaw.w3.org/css-validator/
+    baseURL: https://jigsaw.w3.org/css-validator/validator
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/css.png
+    tags:
+      - CSS
+      - Validation
+      - Conformance
+      - W3C
+      - SOAP
+    properties:
+      - type: WSDL
+        name: CSS Validator WSDL 2.0 description
+        url: wsdl/css-validator.wsdl
+      - type: Documentation
+        name: CSS Validator documentation
+        url: https://jigsaw.w3.org/css-validator/documentation.html
+      - type: APIReference
+        name: CSS Validator Web Service API
+        url: https://jigsaw.w3.org/css-validator/api.html
+      - type: GettingStarted
+        name: CSS Validator User Manual
+        url: https://jigsaw.w3.org/css-validator/manual.html
+      - type: Authentication
+        name: Authentication profile
+        url: authentication/css-authentication.yml
+      - type: RateLimits
+        name: Published rate limits
+        url: rate-limits/css-rate-limits.yml
+      - type: Conventions
+        name: API conventions
+        url: conventions/css-conventions.yml
+      - type: ErrorCatalog
+        name: Fault and finding catalog
+        url: errors/css-problem-types.yml
+      - type: DataModel
+        name: Validation response data model
+        url: data-model/css-data-model.yml
+      - type: Sandbox
+        name: Public validation console
+        url: sandbox/css-sandbox.yml
+      - type: CLI
+        name: css-validator command line
+        url: cli/css-cli.yml
+      - type: SourceCode
+        name: w3c/css-validator
+        url: https://github.com/w3c/css-validator
 features:
   - name: Cascading and Inheritance
     description: Cascade, specificity, and inheritance rules combine author, user, and UA stylesheets.
@@ -102,6 +162,68 @@ common:
   - url: https://developer.mozilla.org/en-US/docs/Web/CSS
     name: MDN CSS Reference
     type: Reference
+  - url: https://www.w3.org/Style/CSS/
+    name: CSS at W3C — developer portal
+    type: DeveloperPortal
+  - url: https://www.w3.org/Style/CSS/learning
+    name: Learning CSS
+    type: GettingStarted
+  - url: https://www.w3.org/Style/CSS/current-work
+    name: CSS Current Work — what is being worked on and what is next
+    type: Roadmap
+  - url: https://www.w3.org/blog/CSS/
+    name: CSS WG Blog
+    type: Blog
+  - url: https://github.com/w3c
+    name: W3C on GitHub
+    type: GitHubOrganization
+  - url: https://lists.w3.org/Archives/Public/www-style/
+    name: www-style public mailing list
+    type: Support
+  - url: https://status.w3.org/
+    name: W3C Status
+    type: StatusPage
+  - url: https://www.w3.org/policies/process/#rec-rescind
+    name: W3C Process — superseding, obsoleting and rescinding a Recommendation
+    type: Deprecation
+  - url: https://www.w3.org/policies/
+    name: W3C Policies and Legal Information
+    type: TermsOfService
+  - url: https://www.w3.org/policies/privacy/
+    name: W3C Privacy Policy
+    type: PrivacyPolicy
+  - url: https://www.w3.org/Style/CSS/Test/
+    name: Official W3C CSS Test Suites
+    type: Tools
+  - type: Vocabulary
+    name: CSS properties and descriptors
+    url: vocabulary/css-vocabulary.yml
+  - type: Packages
+    name: W3C-published CSS packages
+    url: packages/css-packages.yml
+  - type: LLMsTxt
+    name: llms.txt
+    url: llms/css-llms.txt
+  - type: Lifecycle
+    name: Specification and service lifecycle
+    url: lifecycle/css-lifecycle.yml
+  - type: ChangeLog
+    name: CSS Snapshots and validator releases
+    url: changelog/css-changelog.yml
+  - type: Conformance
+    name: Conformance and domain standards
+    url: conformance/css-conformance.yml
+  - type: Plans
+    name: Cost model
+    url: plans/css-plans-pricing.yml
+  - type: AgentSkill
+    name: Agent skills
+    url: skills/_index.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-07'
+  status: enriched
+  artifacts_added: 20
+  pass: local-v3

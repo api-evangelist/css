@@ -1,0 +1,144 @@
+generated: '2026-09-07'
+method: searched
+source: >-
+  https://jigsaw.w3.org/css-validator/manual.html#requestformat and
+  https://jigsaw.w3.org/css-validator/api.html, cross-checked against
+  wsdl/css-validator.wsdl
+api: W3C CSS Validation Service
+summary: >-
+  Cross-cutting runtime semantics for the one callable surface in this record. The service is
+  a single-operation, read-only validator: one endpoint, seven query parameters, five
+  response serializations, no state and no writes.
+base_url: https://jigsaw.w3.org/css-validator/validator
+auth_style:
+  model: anonymous
+  detail: No credentials. See authentication/css-authentication.yml.
+request:
+  style: query-parameters
+  methods: [GET, POST]
+  parameters:
+    - name: uri
+      required: conditional
+      default: null
+      description: URL of the document to validate. HTML or CSS. Either uri or text must be given.
+    - name: text
+      required: conditional
+      default: null
+      description: The stylesheet to validate inline. CSS only. Either uri or text must be given.
+    - name: usermedium
+      required: false
+      default: all
+      description: 'The @media context to validate against: screen, print, braille and others.'
+    - name: output
+      required: false
+      default: html
+      description: Response serialization. See the response block below.
+    - name: profile
+      required: false
+      default: css2
+      description: >-
+        CSS profile to validate against — css1, css2, css21, css3, svg, svgbasic, svgtiny,
+        mobile, atsc-tv, tv, none.
+    - name: lang
+      required: false
+      default: en
+      description: >-
+        Language of the human-readable messages — en, fr, it, ko, ja, es, zh-cn, nl, de, pl.
+    - name: warning
+      required: false
+      default: '2'
+      description: >-
+        Warning verbosity — "no" for none, 0 for fewer, 1 or 2 for more. Warnings are advisory
+        and do not affect validity.
+response:
+  content_negotiation: >-
+    By query parameter, not by Accept header. The output parameter selects the serialization
+    and the service sets Content-Type to match.
+  formats:
+    - value: html / text/html
+      content_type: text/html
+      note: XHTML document. The default.
+    - value: xhtml / application/xhtml+xml
+      content_type: application/xhtml+xml
+    - value: soap12 / application/soap+xml
+      content_type: application/soap+xml
+      note: >-
+        The interface described by wsdl/css-validator.wsdl. Envelope namespace
+        http://www.w3.org/2003/05/soap-envelope, payload namespace
+        http://www.w3.org/2005/07/css-validator.
+    - value: text / text/plain
+      content_type: text/plain
+    - value: json
+      content_type: application/json
+      note: >-
+        Not listed in the User Manual parameter table, but observed live on 2026-09-07:
+        output=json returns a cssvalidation object mirroring the SOAP response
+        (uri, checkedby, csslevel, date, timestamp, validity, result.errorcount,
+        result.warningcount). Recorded as probed, not as documented.
+  envelope:
+    root: cssvalidationresponse (SOAP) / cssvalidation (JSON)
+    fields:
+      - uri — the document validated; the EARL TestSubject
+      - checkedby — the service that produced the result; the EARL Assertor
+      - csslevel — the profile in force during validation
+      - date — validation timestamp
+      - validity — boolean pass/fail
+      - result — errors and warnings, each with count and list
+versioning:
+  scheme: none
+  detail: >-
+    The endpoint carries no version segment and no version header. What varies is the CSS
+    profile being validated against, selected per request by the profile parameter, and the
+    build of the validator W3C happens to be running. The DOWNLOAD page warns explicitly
+    that the online service is a stable release, generally older than the Git version, and
+    that results and behaviour may differ — so a caller cannot pin the engine version.
+  source: https://jigsaw.w3.org/css-validator/DOWNLOAD.html
+pagination:
+  style: none
+  detail: A validation response returns the complete error and warning lists for one document.
+expansion:
+  supported: false
+metadata:
+  supported: false
+request_id:
+  header: null
+  detail: >-
+    No request or correlation identifier is returned. The nearest thing to a trace handle is
+    the echoed uri plus the date/timestamp fields in the response body.
+rate_limit_signaling:
+  headers: []
+  detail: >-
+    No rate-limit headers. A documented one-second courtesy interval only. See
+    rate-limits/css-rate-limits.yml.
+error_envelope:
+  format: domain-specific
+  detail: >-
+    Not RFC 9457. Validation failures are not HTTP errors — an invalid stylesheet returns 200
+    with validity false and a populated errorlist. See errors/css-problem-types.yml.
+idempotency:
+  coverage: na
+  mechanism: none
+  detail: >-
+    The service has no write surface. Every request is a pure function of the submitted
+    document and parameters, so replaying one costs nothing and changes nothing. There is no
+    Idempotency-Key header and none is needed; no Idempotency pointer is emitted for this
+    record.
+reversibility:
+  grade: na
+  detail: >-
+    Read-only. No operation creates, mutates or destroys anything on the provider's side, so
+    there is nothing to reverse and no reversal window to state. Marked na rather than scored
+    zero.
+  write_surfaces: []
+dry_run_mode:
+  supported: na
+  detail: >-
+    Not applicable for the same reason as reversibility — the entire service is already a
+    rehearsal surface. Validating a stylesheet is itself the no-effect check an agent would
+    otherwise want a dry run for.
+cross_references:
+  - authentication/css-authentication.yml
+  - rate-limits/css-rate-limits.yml
+  - errors/css-problem-types.yml
+  - lifecycle/css-lifecycle.yml
+  - wsdl/css-validator.wsdl

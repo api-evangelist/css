@@ -1,0 +1,17 @@
+generated: '2026-09-07'
+method: generated
+source: >-
+  Grounded in wsdl/css-validator.wsdl and the W3C CSS Validator User Manual and API
+  documentation; the example request in the skill was executed live on 2026-09-07 and
+  returned HTTP 200.
+skills:
+  - name: css-validate-stylesheet
+    file: skills/css-validate-stylesheet.md
+    api: W3C CSS Validation Service
+    description: >-
+      Validate a stylesheet against a chosen CSS profile and read the result correctly,
+      including the 200-on-invalid trap and the documented one-second courtesy interval.
+    operations: [validateURI, validateText]
+note: >-
+  One skill, because the service has one operation in two shapes. No skill is authored for
+  CSS the specification itself — there is no callable surface there to ground steps in.

@@ -1,0 +1,91 @@
+generated: '2026-09-07'
+method: derived
+source: wsdl/css-validator.wsdl
+api: W3C CSS Validation Service
+summary: >-
+  The entity graph of a validation response, derived from the XML Schema embedded in the
+  W3C-published WSDL 2.0 description. It is a single-root report tree, not a resource model —
+  the service has no persistent entities, no identifiers and no relationships across calls.
+entities:
+  - name: validateURI
+    kind: request
+    description: Validate the document at a URL. HTML or CSS.
+    fields:
+      - {name: uri, type: anyURI, required: true}
+      - {name: usermedium, type: string, required: false}
+      - {name: profile, type: string, required: false}
+      - {name: warning, type: int, required: false}
+      - {name: lang, type: string, required: false}
+      - {name: output, type: string, required: true, fixed: soap12}
+  - name: validateText
+    kind: request
+    description: Validate an inline stylesheet. CSS only.
+    fields:
+      - {name: text, type: string, required: true}
+      - {name: usermedium, type: string, required: false}
+      - {name: profile, type: string, required: false}
+      - {name: warning, type: int, required: false}
+      - {name: lang, type: string, required: false}
+      - {name: output, type: string, required: true, fixed: soap12}
+  - name: cssvalidationresponse
+    kind: response-root
+    description: >-
+      The validation assertion. Maps onto EARL: uri is the TestSubject, checkedby is the
+      Assertor, validity is the outcome.
+    fields:
+      - {name: uri, type: anyURI}
+      - {name: checkedby, type: anyURI}
+      - {name: csslevel, type: string}
+      - {name: date, type: date}
+      - {name: validity, type: boolean}
+      - {name: result, type: tResult}
+  - name: tResult
+    kind: value-object
+    fields:
+      - {name: errors, type: tErrors}
+      - {name: warnings, type: tWarnings}
+  - name: tErrors
+    kind: value-object
+    fields:
+      - {name: errorcount, type: integer}
+      - {name: errorlist, type: tErrorlist, repeats: true}
+  - name: tErrorlist
+    kind: value-object
+    description: Errors grouped by the stylesheet they came from — an @import pulls in more.
+    fields:
+      - {name: uri, type: anyURI}
+      - {name: error, type: tError, repeats: true}
+  - name: tError
+    kind: value-object
+    fields: [line, errortype, context, message, property, errorsubtype, skippedstring]
+  - name: tWarnings
+    kind: value-object
+    fields:
+      - {name: warningcount, type: integer}
+      - {name: warninglist, type: tWarninglist, repeats: true}
+  - name: tWarninglist
+    kind: value-object
+    fields:
+      - {name: uri, type: anyURI}
+      - {name: warning, type: tWarning, repeats: true}
+  - name: tWarning
+    kind: value-object
+    fields: [line, level, message, context]
+relationships:
+  - {from: cssvalidationresponse, to: tResult, type: has_one, via: result}
+  - {from: tResult, to: tErrors, type: has_one, via: errors}
+  - {from: tResult, to: tWarnings, type: has_one, via: warnings}
+  - {from: tErrors, to: tErrorlist, type: has_many, via: errorlist}
+  - {from: tErrorlist, to: tError, type: has_many, via: error}
+  - {from: tWarnings, to: tWarninglist, type: has_many, via: warninglist}
+  - {from: tWarninglist, to: tWarning, type: has_many, via: warning}
+identifiers:
+  scheme: none
+  detail: >-
+    No opaque ids, no id prefixes. The only identifier in the model is the uri of the document
+    validated, which is supplied by the caller and echoed back.
+notes:
+  - >-
+    The one-to-many between tErrors and tErrorlist is the model's only non-obvious edge: a
+    single validated document can produce several error lists, one per stylesheet reached
+    through @import or a <link> in the validated HTML.

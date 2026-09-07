@@ -1,0 +1,42 @@
+generated: '2026-09-07'
+method: searched
+source: https://jigsaw.w3.org/css-validator/DOWNLOAD.html
+name: css-validator
+summary: >-
+  The W3C CSS Validation Service is distributed as a runnable Java archive that is explicitly
+  documented for command line use. It is the same engine that runs the public service, so a
+  caller who needs volume, a pinned version, or offline validation runs it locally instead of
+  calling jigsaw.w3.org.
+official: true
+publisher: W3C
+repository: https://github.com/w3c/css-validator
+install:
+  - method: jar
+    command: 'curl -LO https://github.com/w3c/css-validator/releases/latest/download/css-validator.jar'
+    note: >-
+      Requires a Java runtime. The link floats to the latest release, so it is not pinned —
+      see packages/css-packages.yml.
+  - method: source
+    command: 'git clone https://github.com/w3c/css-validator && ant jar'
+    note: Requires the Ant build tool. Produces css-validator.jar.
+usage:
+  - command: 'java -jar css-validator.jar <url>'
+    description: >-
+      Validate the document at a URL from the terminal. Quoted verbatim from the DOWNLOAD
+      page, which gives the example `java -jar css-validator.jar http://www.w3.org/`.
+    source: https://jigsaw.w3.org/css-validator/DOWNLOAD.html
+flags:
+  documented: false
+  note: >-
+    W3C documents the single invocation form above and nothing else. No flag reference is
+    published for the command line mode, and none is invented here — the servlet parameters
+    in conventions/css-conventions.yml are the documented request surface.
+other_packagings:
+  - form: war
+    description: Servlet archive for Tomcat, Jetty or Jigsaw. Built with `ant war`.
+    since: 2009
+  - form: source
+    description: Git checkout of w3c/css-validator.
+caveat: >-
+  The DOWNLOAD page warns that the online service runs a stable release generally older than
+  the Git version, and that results and behaviour may differ between the two.

@@ -1,0 +1,47 @@
+generated: '2026-09-07'
+method: searched
+source: >-
+  https://jigsaw.w3.org/css-validator/manual.html#requestformat,
+  https://www.w3.org/policies/patent-policy/ and
+  https://www.w3.org/copyright/document-license/
+plan_count: 0
+summary: >-
+  There are no plans and no pricing page, and that is a finding rather than a gap. CSS is a
+  royalty-free W3C standard and the CSS Validation Service is described in its own manual as
+  "a free, public service for all". Nobody is billed, nobody signs up, and there is no paid
+  tier to move to — the escalation path for heavy use is to run your own instance, not to buy
+  one. W3C funds this through membership and donations.
+plans: []
+cost_model:
+  specifications:
+    price: 0
+    currency: USD
+    detail: >-
+      CSS specifications are published under the W3C Document License and developed under the
+      W3C Royalty-Free Patent Policy, which commits participants to license essential claims
+      royalty-free. Implementing CSS carries no licence fee.
+    sources:
+      - https://www.w3.org/copyright/document-license/
+      - https://www.w3.org/policies/patent-policy/
+  validation_service:
+    price: 0
+    currency: USD
+    quota: null
+    overage: null
+    detail: >-
+      Free and unauthenticated, with a documented one-second courtesy interval between
+      programmatic requests instead of a quota. See rate-limits/css-rate-limits.yml.
+    source: https://jigsaw.w3.org/css-validator/manual.html#requestformat
+  tooling:
+    price: 0
+    currency: USD
+    detail: >-
+      The validator jar and war, and the @webref/* and web-specs data packages, are published
+      under MIT or CC0. See packages/css-packages.yml.
+funding:
+  model: consortium membership and donations
+  urls:
+    - https://www.w3.org/donate/
+  note: >-
+    W3C is a member-funded standards body. Membership buys a seat in the process, not access
+    to CSS — the specifications and the validator are public regardless.
