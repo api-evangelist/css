@@ -150,6 +150,8 @@ useCases:
   - name: Accessibility
     description: Authors honor user preferences (prefers-reduced-motion, prefers-contrast) via media features.
 common:
+  - type: RateLimits
+    url: rate-limits/css-rate-limits.yml
   - type: DomainSecurity
     url: security/css-domain-security.yml
   - url: https://www.w3.org/Style/CSS/
