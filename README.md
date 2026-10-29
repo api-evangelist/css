@@ -1,4 +1,4 @@
-# CSS (Cascading Style Sheets)
+# css
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,72 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cascading Style Sheets (CSS) is a W3C web standard for describing the presentation of documents written in HTML and XML, including layout, colors, typography, and animations. CSS is a foundational web technology maintained by the W3C CSS Working Group and implemented natively by every major web browser. The CSS Object Model (CSSOM) and CSS Houdini extensibility APIs expose CSS to JavaScript at runtime.
+## css on APIs.io
 
-**APIs.yml URL:** https://raw.githubusercontent.com/api-evangelist/css/refs/heads/main/apis.yml
+Everything profiled for css is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/css/](https://apis.io/providers/css/)** — or go straight to one of the APIs or properties below.
 
-## Scope
+## API Evangelist rating
 
-- **Type:** Standard
-- **x-type:** standard
-- **Body:** W3C CSS Working Group
+Not yet rated. See [apis.io/providers/css/](https://apis.io/providers/css/).
 
-## Tags
+## How this profile is made
 
-CSS, Web Standards, W3C, Styling, Browser
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Standards Surface
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for css: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-CSS does not have a single REST API. It is a collection of W3C specifications implemented by browser engines. The most relevant programmatic surfaces for developers are:
+## Open an issue
 
-- **CSSOM (CSS Object Model)** - JavaScript access to stylesheets and computed styles via DOM APIs.
-- **CSS Houdini** - Low-level extensibility APIs including Paint, Layout, Animation Worklet, and Properties and Values.
-
-## Key Specifications
-
-- CSS Cascading and Inheritance Level 3
-- Selectors Level 3 / 4
-- CSS Color Levels 3-5
-- CSS Fonts Levels 3-4
-- CSS Flexible Box Layout (Flexbox) Level 1
-- CSS Grid Layout Level 1
-- Media Queries Levels 3-4
-- CSS Containment Level 1
-- CSS Writing Modes Level 3
-- CSS Box Model Level 3
-
-A complete and up-to-date list is at https://www.w3.org/Style/CSS/current-work .
-
-## Features
-
-- Cascade, specificity, and inheritance
-- Powerful selectors (structural, attribute, pseudo-class, pseudo-element)
-- Box model and modern layout (Flexbox, Grid, Subgrid)
-- Responsive design via Media Queries
-- Color, gradients, and rich typography
-- Animations and transitions
-- CSSOM access from JavaScript
-- CSS Houdini for custom paint, layout, and properties
-
-## Use Cases
-
-- Web page styling
-- Responsive and adaptive UI
-- Component libraries and design systems
-- Pure-CSS web animations
-- Browser polyfills via Houdini worklets
-- Accessibility-aware presentation
-
-## Resources
-
-- W3C CSS Home: https://www.w3.org/Style/CSS/
-- CSS Specifications: https://www.w3.org/TR/?tag=css
-- CSS Current Work: https://www.w3.org/Style/CSS/current-work
-- CSS Working Group: https://www.w3.org/groups/wg/css/
-- CSSWG Drafts (GitHub): https://github.com/w3c/csswg-drafts
-- CSS Houdini Drafts (GitHub): https://github.com/w3c/css-houdini-drafts
-- MDN CSS Reference: https://developer.mozilla.org/en-US/docs/Web/CSS
-
-## Maintainers
-
-- Kin Lane (kin@apievangelist.com)
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/css/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
